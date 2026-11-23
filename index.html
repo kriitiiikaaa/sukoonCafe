@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sukoon Cafe| Coffee, Cakes & Sweet Moments</title>
+
+    <meta
+      name="description"
+      content="Discover Sukoon Café, your cozy destination for handcrafted coffee, delicious cakes, pastries and desserts. Find your new favorite coffee and sweet treat."
+    />
+
+    <meta
+      name="keywords"
+      content="Sukoon Cafe, coffee shop, cafe, cakes, desserts, pastries, coffee, cappuccino, latte"
+    />
+
+    <meta name="author" content="Sukoon Café" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Announcement bar -->
+    <div class="announcement">
+      A little coffee, a little happiness. Welcome to Sukoon Café.
+    </div>
+
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">
+          <span class="logo-name">Sukoon</span>
+          <span class="logo-subtitle">CAFÉ & DESSERTS</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#menu" class="nav-button">Explore Menu ↗</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR EVERYDAY HAPPY PLACE</span>
+
+        <h1>
+          Coffee, comfort<br />
+          & a little <em>sweetness.</em>
+        </h1>
+
+        <p>
+          Slow down, sip something lovely, and enjoy the little moments that
+          make life sweeter.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="primary-button">Discover Our Menu ↗</a>
+          <a href="#about" class="text-button">Our Story</a>
+        </div>
+
+        <div class="hero-note">
+          <span>☕</span>
+          Made with love. Served with warmth.
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85"
+          alt="Warm and inviting café interior"
+        />
+      </div>
+
+      <div class="hero-decoration">Coffee & conversations</div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro-section container">
+      <div class="intro-label">A MOMENT FOR YOU</div>
+
+      <h2>
+        More than coffee.<br />
+        A place to <em>feel at home.</em>
+      </h2>
+
+      <p>
+        From your first morning sip to your afternoon sweet craving, Preety Café
+        is here to make ordinary moments extraordinary.
+      </p>
+    </section>
+
+    <!-- Menu -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">MADE TO MAKE YOU SMILE</span>
+            <h2>Our <em>favorites</em></h2>
+          </div>
+
+          <p>
+            A little something for every mood, every moment and every craving.
+          </p>
+        </div>
+
+        <!-- Menu filters -->
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="coffee">Coffee</button>
+          <button class="filter-btn" data-category="cold">Cold Drinks</button>
+          <button class="filter-btn" data-category="desserts">Desserts</button>
+          <button class="filter-btn" data-category="bakery">Bakery</button>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Item 1 -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80"
+                alt="Freshly prepared cappuccino with creamy foam"
+              />
+              <span class="menu-tag">Bestseller</span>
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Cappuccino</h3>
+                <span class="price">Rs. 250</span>
+              </div>
+              <p>Rich espresso topped with silky milk foam.</p>
+            </div>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="menu-card" data-category="coffee">
+            <div class="menu-image">
+              <img
+                src="https://images.stockcake.com/public/0/9/3/09341b9f-5d4a-4cb8-98a0-a6a7fcf4dcfa_large/artistic-latte-coffee-stockcake.jpg"
+                alt="Latte coffee served in a ceramic cup"
+              />
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Café Latte</h3>
+                <span class="price">Rs. 280</span>
+              </div>
+              <p>Espresso blended with steamed milk.</p>
+            </div>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="menu-card" data-category="cold">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80"
+                alt="Refreshing iced coffee in a glass"
+              />
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Iced Coffee</h3>
+                <span class="price">Rs. 300</span>
+              </div>
+              <p>Chilled coffee, milk and a refreshing touch.</p>
+            </div>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                alt="Chocolate cake with creamy frosting"
+              />
+              <span class="menu-tag">Sweet favorite</span>
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Chocolate Cake</h3>
+                <span class="price">Rs. 350</span>
+              </div>
+              <p>Soft chocolate layers with rich cream.</p>
+            </div>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="menu-card" data-category="bakery">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80"
+                alt="Freshly baked golden croissants"
+              />
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Butter Croissant</h3>
+                <span class="price">Rs. 220</span>
+              </div>
+              <p>Flaky, buttery and baked to perfection.</p>
+            </div>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="menu-card" data-category="desserts">
+            <div class="menu-image">
+              <img
+                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+                alt="Strawberry dessert topped with fresh berries"
+              />
+            </div>
+
+            <div class="menu-info">
+              <div class="menu-title">
+                <h3>Berry Delight</h3>
+                <span class="price">Rs. 320</span>
+              </div>
+              <p>A creamy dessert with fresh berry goodness.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-footer">
+          <p>Good coffee. Good desserts. Good days.</p>
+          <a href="#contact" class="primary-button">Visit Our Café ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section container" id="about">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=85"
+          alt="Coffee being freshly prepared by a barista"
+        />
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow">THE HEART BEHIND THE CUP</span>
+
+        <h2>Made for moments<br />that <em>matter.</em></h2>
+
+        <p>
+          We believe the best moments are often the simplest. A warm cup of
+          coffee, a favorite dessert, meaningful conversations and a place where
+          you can simply be yourself.
+        </p>
+
+        <p>
+          At Sukoon Café, every cup is an invitation to slow down, every dessert
+          is a little celebration, and every visit is a chance to create a
+          beautiful memory.
+        </p>
+
+        <a href="#contact" class="text-button">Come say hello ↗</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading gallery-heading">
+          <div>
+            <span class="eyebrow">A GLIMPSE OF OUR WORLD</span>
+            <h2>Little moments, <em>beautifully served.</em></h2>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-large">
+            <img
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+              alt="Coffee and a cozy café moment"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=700&q=85"
+              alt="Fresh bakery treats"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=700&q=85"
+              alt="Barista coffee served in a cup"
+            />
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=700&q=85"
+              alt="Chocolate dessert and sweet treats"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote-section">
+      <div class="quote-icon">“</div>
+      <h2>Life is short.<br />Make it <em>sweet.</em></h2>
+      <p>Your coffee is waiting. Your moment is here.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section container" id="contact">
+      <div class="contact-content">
+        <span class="eyebrow">WE'D LOVE TO SEE YOU</span>
+
+        <h2>Come for the coffee.<br />Stay for the <em>feeling.</em></h2>
+
+        <p>
+          Whether you're catching up with friends, working on something special
+          or simply craving coffee, we have a place for you.
+        </p>
+
+        <div class="contact-details">
+          <div>
+            <span class="contact-icon">⌖</span>
+            <div>
+              <h4>Find us</h4>
+              <p>Kathmandu, Nepal</p>
+            </div>
+          </div>
+
+          <div>
+            <span class="contact-icon">◷</span>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>Every day · 7:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+
+          <div>
+            <span class="contact-icon">✆</span>
+            <div>
+              <h4>Contact</h4>
+              <p>+977-9812345678</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="primary-button" id="contactButton">Get in Touch ↗</a>
+      </div>
+
+      <div class="contact-image">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/070/104/206/non_2x/cafe-table-setting-with-coffee-cup-sunlight-restaurant-setting-free-photo.jpg"
+          alt="Coffee and café table setting"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-name">Sukoon</span>
+            <span class="logo-subtitle">CAFÉ & DESSERTS</span>
+          </a>
+
+          <p>A little coffee, a little happiness.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">Our Story</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Sukoon Café. All rights reserved.</p>
+          <p>Made with love & coffee ☕</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
